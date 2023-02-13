@@ -3,12 +3,16 @@ package com.epam.m1.exceptions;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Complete the code, parse integers, calculate the sum of numbers in the WORDS, join strings with
  * space delimiter
  */
 public class ParseIntegers {
+
+    static Logger logger = Logger.getLogger(ParseIntegers.class.getName());
 
     private static final List<String> WORDS =
             Arrays.asList(
@@ -29,8 +33,8 @@ public class ParseIntegers {
                 continue;
             }
         }
-        System.out.println("Sum is " + sum);
-        System.out.println("Just words:" + justWords);
+        logger.log(Level.INFO, "Sum is {0}", sum);
+        logger.log(Level.INFO, "Just words:{0}", justWords);
     }
 }
 
