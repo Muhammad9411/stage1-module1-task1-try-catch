@@ -30,7 +30,6 @@ public class ParseIntegers {
                 sum += number;
             } catch (Exception ex) {
                 justWords += " " + next;
-                continue;
             }
         }
         logger.log(Level.INFO, "Sum is {0}", sum);
