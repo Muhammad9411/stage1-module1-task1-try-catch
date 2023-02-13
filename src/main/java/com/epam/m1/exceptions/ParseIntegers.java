@@ -26,10 +26,11 @@ public class ParseIntegers {
                 sum += number;
             } catch (Exception ex) {
                 justWords += " " + next;
+                continue;
             }
         }
-        System.err.println("Sum is " + sum);
-        System.err.println("Just words:" + justWords);
+        System.out.println("Sum is " + sum);
+        System.out.println("Just words:" + justWords);
     }
 }
 
